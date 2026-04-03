@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+}
+
+.page__main {
+  flex-grow: 1;
+}

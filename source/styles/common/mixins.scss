@@ -1,0 +1,7 @@
+@mixin font-additional {
+  font-family: "FreeSet", "Arial", sans-serif;
+}
+
+@mixin transition {
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}

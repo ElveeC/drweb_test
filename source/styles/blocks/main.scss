@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+
+  @media (max-width: $vp-767) {
+    padding: 48px 0;
+  }
+
+  @media (max-width: $vp-479) {
+    padding: 40px 0;
+  }
+}

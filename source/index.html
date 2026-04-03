@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Web</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/roboto/roboto-regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/roboto/roboto-medium.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/roboto/roboto-bold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/freeSet/free-set-demi-bold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/freeSet/free-set-extra-bold.woff2" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <p class="visually-hidden">Доктор Веб</p>
+  </header>
+  <main class="page__main main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <a class="hero__logo-link" href="https://www.drweb.ru/">
+        <svg class="hero__logo-icon" aria-hidden="true" focusable="false" width="143" height="25">
+          <use href="icons/stack.svg#logo"></use>
+        </svg>
+        <span class="visually-hidden">Логотип Dr.Web</span>
+      </a>
+      <div class="hero__slogan">
+        <h1 class="hero__title">Dr.Web VirLabConf <span class="hero__highlight">2.0</span></h1>
+        <p class="hero__text">Только для своих&nbsp;&mdash; <span class="hero__highlight">закрытая конференция</span>
+          антивирусной лаборатории Dr.Web. Идеальное место для того, чтобы узнать
+          <span class="hero__highlight">о&nbsp;новейших&nbsp;киберугрозах</span>, их эволюции&nbsp;и способах защиты.
+        </p>
+      </div>
+      <div class="hero__info">
+        <div class="hero__date-block">
+          <p class="hero__date"><span class="hero__date-text">Дата:</span>&nbsp;4 апреля 2025</p>
+          <p class="hero__date"><span class="hero__date-text">Время:</span>&nbsp;10:30</p>
+        </div>
+        <p class="hero__address"><span class="hero__highlight">Bolshevik Loft</span>, Ленинградский проспект, 15,
+          стр.&nbsp;1<br>
+          (БЦ&nbsp;&laquo;Большевик&raquo;), г. Москва</p>
+      </div>
+      <a class="hero__download-button" href="#" download="#"><span class="hero__download-text">Программа
+          мероприятия</span>
+        <svg aria-hidden="true" focusable="false" width="26" height="26">
+          <use href="icons/stack.svg#download"></use>
+        </svg>
+        <span class="visually-hidden">Логотип Dr.Web</span></a>
+    </section>
+  </main>
+  <footer class="footer">
+    Footer
+  </footer>
+  <script src="./scripts/index.js" type="module"></script>
+</body>
+
 </html>
