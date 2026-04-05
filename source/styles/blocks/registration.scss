@@ -1,0 +1,199 @@
+@import "../common/mixins.scss";
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 668px;
+
+  @media (max-width: $vp-1279) {
+    max-width: 568px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 448px;
+    gap: 24px;
+  }
+
+  @media (max-width: $vp-479) {
+    max-width: 296px;
+  }
+}
+
+.registration__title {
+  @include font-additional;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: $color-reversed;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+
+  @media (max-width: $vp-767) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 64px;
+  gap: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: $color-reversed;
+
+  @media (max-width: $vp-767) {
+    padding: 40px 24px;
+  }
+}
+
+.registration__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 16px;
+  width: 100%;
+}
+
+.registration__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.registration__input {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  padding: 10px 12px;
+  border: 1px solid $color-border;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @include transition;
+
+  &--not-empty {
+    border: 1px solid $color-text;
+  }
+
+  &--error {
+    border: 1px solid $color-error;
+  }
+
+  &:hover {
+    border: 1px solid $color-bg-primary;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $color-bg-primary;
+  }
+}
+
+.registration__label {
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-secondary-text;
+}
+
+.registration__note {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-disabled-text;
+
+  @media (max-width: $vp-479) {
+    font-size: 13px;
+  }
+}
+
+.registration__agreement {
+  position: relative;
+  display: block;
+  padding-left: 24px;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $color-text;
+  cursor: pointer;
+}
+
+.registration__agreement-link {
+  text-decoration: underline;
+}
+
+.registration__checkbox-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $color-disabled-text;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  @include transition;
+}
+
+.registration__checkbox:checked + .registration__checkbox-icon {
+  background-color: $color-active;
+  border: 1px solid $color-active;
+  background-image: url("../../icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 7px;
+}
+
+.registration__checkbox:focus + .registration__checkbox-icon {
+  border: 1px solid $color-text;
+}
+
+.registration__button {
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+  max-height: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-reversed;
+  border: 1px solid $color-active;
+  background-color: $color-active;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  @include transition;
+
+  &:hover {
+    @media (min-width: $vp-1279 + 1px) {
+      background-color: $color-active-hover;
+      border: 1px solid $color-active-hover;
+    }
+  }
+
+  &:active {
+    @media (min-width: $vp-1279 + 1px) {
+      background-color: $color-active-hover;
+      border: 1px solid $color-active-hover;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $vp-1279 + 1px) {
+      outline: none;
+      border: 1px solid $color-text;
+    }
+  }
+}
+
+.registration__button:disabled {
+  color: $color-disabled-text;
+  background-color: $color-bg-tertiary;
+  border: 1px solid $color-bg-tertiary;
+}
