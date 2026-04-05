@@ -6,21 +6,9 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
-  max-width: 805px;
+  width: 100%;
   color: $color-reversed;
   text-align: center;
-
-  @media (max-width: $vp-1279) {
-    max-width: 568px;
-  }
-
-  @media (max-width: $vp-767) {
-    max-width: 448px;
-  }
-
-  @media (max-width: $vp-479) {
-    max-width: 296px;
-  }
 }
 
 .hero__logo-link {

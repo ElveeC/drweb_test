@@ -4,19 +4,11 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
+  width: 100%;
   max-width: 668px;
 
-  @media (max-width: $vp-1279) {
-    max-width: 568px;
-  }
-
   @media (max-width: $vp-767) {
-    max-width: 448px;
     gap: 24px;
-  }
-
-  @media (max-width: $vp-479) {
-    max-width: 296px;
   }
 }
 

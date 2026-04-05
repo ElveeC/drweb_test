@@ -1,0 +1,71 @@
+@import "../common/mixins.scss";
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  width: 100%;
+  max-width: 668px;
+  box-sizing: border-box;
+  gap: 12px;
+  color: $color-reversed;
+  border-radius: 15px;
+  background: radial-gradient(100% 100% at 100% 0%, $color-bg-additional 0%, $color-bg-primary 100%);
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 48px;
+  }
+}
+
+.contact__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__image {
+  width: 140px;
+  height: 140px;
+
+  background-size: 140px 140px;
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  background-image:
+    image-set(
+      url("../../images/heart@1x.webp") 1x type("image/webp"),
+      url("../../images/heart@2x.webp") 2x type("image/webp"),
+      url("../../images/heart@1x.png") 1x type("image/png"),
+      url("../../images/heart@2x.png") 2x type("image/png")
+    );
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
+}
+
+.contact__title {
+  @include font-additional;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contact__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact__link {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: $color-active;
+}

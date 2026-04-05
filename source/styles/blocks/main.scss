@@ -1,9 +1,5 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 64px;
+  margin: 0 auto;
   padding: 64px 0;
 
   @media (max-width: $vp-767) {
@@ -12,5 +8,29 @@
 
   @media (max-width: $vp-479) {
     padding: 40px 0;
+  }
+}
+
+.main__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+
+  max-width: 805px;
+
+  @media (max-width: $vp-1279) {
+    max-width: 568px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 448px;
+    gap: 48px;
+  }
+
+  @media (max-width: $vp-479) {
+    max-width: 296px;
+    gap: 40px;
   }
 }
