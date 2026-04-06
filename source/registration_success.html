@@ -63,26 +63,32 @@
               <legend class="visually-hidden">Контактная информация</legend>
               <div class="registration__input-wrapper">
                 <label class="registration__label" for="name">Фамилия, Имя</label>
-                <input class="registration__input" type="text" id="name" name="name" required>
+                <input class="registration__input registration__input--not-empty" type="text" id="name" name="name"
+                  value="Иван Иванов" required>
               </div>
               <div class="registration__input-wrapper">
-                <label class="registration__label" for="company">Компания</label>
-                <input class="registration__input" type="text" id="company" name="company" required>
+                <label class="registration__label " for="company">Компания</label>
+                <input class="registration__input registration__input--not-empty" type="text" id="company"
+                  name="company" value="СигмаБой" required>
               </div>
               <div class="registration__input-wrapper">
                 <label class="registration__label" for="position">Должность</label>
-                <input class="registration__input" type="text" id="position" name="position" required>
+                <input class="registration__input registration__input--not-empty" type="text" id="position"
+                  name="position" value="Менеджер" required>
               </div>
               <div class="registration__input-wrapper">
                 <label class="registration__label" for="email">E-mail</label>
-                <input class="registration__input" type="email" id="email" name="email" required>
+                <input class="registration__input registration__input--not-empty" type="email" id="email" name="email"
+                  value="123@gmail.com" required>
               </div>
               <div class="registration__input-wrapper">
                 <label class="registration__label" for="tel">Телефон</label>
-                <input class="registration__input" type="tel" id="tel" name="tel" required pattern="\+?[0-9\s\-\(\)]+">
+                <input class="registration__input registration__input--not-empty" type="tel" id="tel" name="tel"
+                  value="+32 2453-24-42" required pattern="\+?[0-9\s\-\(\)]+">
               </div>
             </fieldset>
-
+            <p class="registration__notification">Обратите внимание на&nbsp;правильность указания адреса электронной
+              почты: на&nbsp;него придет подтверждение регистрации.</p>
             <div>
               <p class="registration__note">Все поля обязательны для заполнения!</p>
               <label class="registration__agreement">
@@ -96,7 +102,7 @@
                 </span>
               </label>
             </div>
-            <button class="registration__button button" disabled type="submit">Зарегистрироваться</button>
+            <button class="registration__button button" type="submit">Зарегистрироваться</button>
           </form>
         </section>
 
@@ -112,7 +118,6 @@
         </section>
       </div>
     </div>
-
   </main>
   <footer class="footer">
     <nav class="nav">

@@ -1,0 +1,51 @@
+@import "../common/mixins.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 12px 24px;
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-reversed;
+  border: 1px solid $color-active;
+  background-color: $color-active;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @include transition;
+
+  &--accent {
+    color: $color-text;
+    background: $color-reversed;
+  }
+
+  &:hover {
+    @media (min-width: $vp-1279 + 1px) {
+      background-color: $color-active-hover;
+      border: 1px solid $color-active-hover;
+    }
+  }
+
+  &:active {
+    @media (min-width: $vp-1279 + 1px) {
+      background-color: $color-active-hover;
+      border: 1px solid $color-active-hover;
+    }
+  }
+
+  &:focus {
+    @media (min-width: $vp-1279 + 1px) {
+      outline: none;
+      border: 1px solid $color-text;
+    }
+  }
+
+  &:disabled {
+    color: $color-disabled-text;
+    background-color: $color-bg-tertiary;
+    border: 1px solid $color-bg-tertiary;
+    cursor: default;
+  }
+}

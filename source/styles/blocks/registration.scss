@@ -1,6 +1,7 @@
 @import "../common/mixins.scss";
 
 .registration {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -94,6 +95,13 @@
   color: $color-secondary-text;
 }
 
+.registration__error {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-error;
+}
+
+
 .registration__note {
   margin-bottom: 16px;
   font-size: 14px;
@@ -147,45 +155,96 @@
   border: 1px solid $color-text;
 }
 
-.registration__button {
+.registration__notification {
+  padding: 16px 24px;
+  background: $color-bg-tertiary;
+  border: 1px solid $color-error;
+  border-radius: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+}
+
+.registration__form-wrapper {
+  position: relative;
+}
+
+.registration__popup {
+  position: absolute;
+  inset: 0;
   display: flex;
   justify-content: center;
-  padding: 12px 24px;
-  max-height: 40px;
-  font-size: 16px;
-  line-height: 16px;
-  color: $color-reversed;
-  border: 1px solid $color-active;
-  background-color: $color-active;
-  border-radius: 5px;
+  align-items: flex-start;
+  z-index: 10;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.registration__popup-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  position: absolute;
+  top: calc(50% - 270px/2 - 15px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  padding: 64px 48px 48px;
   box-sizing: border-box;
 
-  @include transition;
+  text-align: center;
+  color: $color-text;
+  background-color: $color-reversed;
+  box-shadow: 0 2px 32px rgba(128, 128, 128, 0.15);
+  border-radius: 15px;
 
-  &:hover {
-    @media (min-width: $vp-1279 + 1px) {
-      background-color: $color-active-hover;
-      border: 1px solid $color-active-hover;
-    }
+
+  @media (max-width: $vp-767) {
+    top: calc(50% - 380px/3);
   }
 
-  &:active {
-    @media (min-width: $vp-1279 + 1px) {
-      background-color: $color-active-hover;
-      border: 1px solid $color-active-hover;
-    }
-  }
-
-  &:focus {
-    @media (min-width: $vp-1279 + 1px) {
-      outline: none;
-      border: 1px solid $color-text;
-    }
+  @media (max-width: $vp-479) {
+    top: calc(50% - 250px/3);
   }
 }
 
-.registration__button:disabled {
-  color: $color-disabled-text;
-  background-color: $color-bg-tertiary;
-  border: 1px solid $color-bg-tertiary;
+.registration__popup-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.registration__popup-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.registration__popup-text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.registration__popup-close {
+  position: absolute;
+  width: 56px;
+  height: 64px;
+  top: 0;
+  right: 0;
+  background-color: $color-reversed;
+  border-radius: 15px;
+  border: none;
+  background-image: url("../../icons/cross.svg");
+  background-position: center center;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.registration__popup-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

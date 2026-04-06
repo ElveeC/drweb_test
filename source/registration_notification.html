@@ -75,19 +75,21 @@
               </div>
               <div class="registration__input-wrapper">
                 <label class="registration__label" for="email">E-mail</label>
-                <input class="registration__input" type="email" id="email" name="email" required>
+                <input class="registration__input registration__input--not-empty" type="email" id="email" name="email"
+                  value="123@gmail.com" required>
               </div>
               <div class="registration__input-wrapper">
                 <label class="registration__label" for="tel">Телефон</label>
                 <input class="registration__input" type="tel" id="tel" name="tel" required pattern="\+?[0-9\s\-\(\)]+">
               </div>
             </fieldset>
-
+            <p class="registration__notification">Обратите внимание на&nbsp;правильность указания адреса электронной
+              почты: на&nbsp;него придет подтверждение регистрации.</p>
             <div>
               <p class="registration__note">Все поля обязательны для заполнения!</p>
               <label class="registration__agreement">
                 <input class="registration__checkbox visually-hidden" type="checkbox" id="user-agreement"
-                  name="user-agreement" checked required>
+                  name="user-agreement" required>
                 <span class="registration__checkbox-icon">
                 </span>
                 <span class="registration__agreement-text">Я даю согласие на обработку моих персональных данных в
