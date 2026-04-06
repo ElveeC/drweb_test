@@ -38,7 +38,7 @@ npm run lint
 
 - [registration_notification.html](https://drweb-test-sand.vercel.app/registration_notification.html)
 
-- [registration_success.html]https://drweb-test-sand.vercel.app/registration_success.html
+- [registration_success.html](https://drweb-test-sand.vercel.app/registration_success.html)
 
 - [popup_error.html](https://drweb-test-sand.vercel.app/popup_error.html)
 
