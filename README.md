@@ -1,5 +1,7 @@
 # Тестовое задание для Doctor Web
 
+[Проект](https://drweb-test-sand.vercel.app/) на Vercel: [https://drweb-test-sand.vercel.app/](https://drweb-test-sand.vercel.app/)
+
 ## Запуск
 
 Для сборки необходимо наличие Node.js версии 22
