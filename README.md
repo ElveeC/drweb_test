@@ -32,16 +32,16 @@ npm run lint
 
 ## Страницы, демонстрирующие ошибки и уведомления:
 
-- popup_error.html
+- [registration_error1.html](https://drweb-test-sand.vercel.app/registration_error1.html)
 
-- popup_error2.html
+- [registration_error2.html](https://drweb-test-sand.vercel.app/registration_error2.html)
 
-- popup_success.html
+- [registration_notification.html](https://drweb-test-sand.vercel.app/registration_notification.html)
 
-- registration_error1.html
+- [registration_success.html]https://drweb-test-sand.vercel.app/registration_success.html
 
-- registration_error2.html
+- [popup_error.html](https://drweb-test-sand.vercel.app/popup_error.html)
 
-- registration_notification.html
+- [popup_error2.html](https://drweb-test-sand.vercel.app/popup_error2.html)
 
-- registration_success.html
+- [popup_success.html](https://drweb-test-sand.vercel.app/popup_success.html)
