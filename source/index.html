@@ -22,17 +22,15 @@
 
       <!-- Hero -->
       <section class="hero">
-        <a class="hero__logo-link" href="https://www.drweb.ru/">
-          <svg class="hero__logo-icon" aria-hidden="true" focusable="false" width="143" height="25">
-            <use href="icons/stack.svg#logo"></use>
-          </svg>
-          <span class="visually-hidden">Логотип Dr.Web</span>
+        <a class="hero__logo-link" href="https://www.drweb.ru/" target="_blank" rel="noreferrer noopener">
+          <img src="images/logo.svg" width="143" height="25" alt="Логотип Доктор Веб">
         </a>
         <div class="hero__slogan">
           <h1 class="hero__title">Dr.Web VirLabConf <span class="hero__title-highlight">2.0</span></h1>
-          <p class="hero__text">Только для своих&nbsp;&mdash; <span class="hero__highlight">закрытая конференция</span>
+          <p class="hero__text">Только для своих&nbsp;&mdash; <span class="hero__text-highlight">закрытая
+              конференция</span>
             антивирусной лаборатории Dr.Web. Идеальное место для того, чтобы узнать
-            <span class="hero__highlight">о&nbsp;новейших&nbsp;киберугрозах</span>, их эволюции&nbsp;и способах защиты.
+            <span class="hero__text-highlight">о&nbsp;новейших&nbsp;киберугрозах</span>, их эволюции&nbsp;и способах защиты.
           </p>
         </div>
         <div class="hero__info">
@@ -50,7 +48,8 @@
           <svg aria-hidden="true" focusable="false" width="26" height="26">
             <use href="icons/stack.svg#download"></use>
           </svg>
-          <span class="visually-hidden">Логотип Dr.Web</span></a>
+          <span class="visually-hidden">Логотип Dr.Web</span>
+        </a>
       </section>
 
       <!-- Registration -->
@@ -90,7 +89,7 @@
               </span>
               <span class="registration__agreement-text">Я даю согласие на обработку моих персональных данных в
                 соответствии с&nbsp;<a class="registration__agreement-link" href="https://company.drweb.ru/policy/"
-                  target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>
+                  target="_blank" rel="noreferrer noopener">Политикой конфиденциальности</a>
               </span>
             </label>
           </div>
@@ -111,7 +110,98 @@
     </div>
   </main>
   <footer class="footer">
-    Footer
+    <nav class="nav">
+      <h2 class="visually-hidden">Меню сайта</h2>
+      <ul class="nav__list">
+        <li class="nav__item nav__item--1"><a class="nav__link" href="#">Для дома</a></li>
+        <li class="nav__item nav__item--2"><a class="nav__link" href="#">Для бизнеса</a></li>
+        <li class="nav__item nav__item--3"><a class="nav__link" href="#">Поддержка</a></li>
+        <li class="nav__item nav__item--4"><a class="nav__link" href="#">Пользователям</a></li>
+        <li class="nav__item nav__item--5"><a class="nav__link" href="#">Партнерам</a></li>
+        <li class="nav__item nav__item--6"><a class="nav__link" href="#">О компании</a></li>
+        <li class="nav__item nav__item--7"><a class="nav__link" href="#">Контакты</a></li>
+        <li class="nav__item nav__item--8"><a class="nav__link" href="#">Вакансии</a></li>
+        <li class="nav__item nav__item--9">
+          <ul class="nav__social-list">
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#tg"></use>
+                </svg>
+                <span class="visually-hidden">Telegram Dr.Web</span>
+              </a>
+            </li>
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">VK Dr.Web</span>
+              </a>
+            </li>
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#zen"></use>
+                </svg>
+                <span class="visually-hidden">Zen Dr.Web</span>
+              </a>
+            </li>
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg class="nav__social-img" aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#habr"></use>
+                </svg>
+                <span class="visually-hidden">Habr Dr.Web</span>
+              </a>
+            </li>
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#youtube"></use>
+                </svg>
+                <span class="visually-hidden">Youtube Dr.Web</span>
+              </a>
+            </li>
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#rutube"></use>
+                </svg>
+                <span class="visually-hidden">Rutube Dr.Web</span>
+              </a>
+            </li>
+            <li class="nav__social-item">
+              <a class="nav__social-link" href="#">
+                <svg aria-hidden="true" focusable="false" width="24" height="24">
+                  <use href="icons/stack.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники Dr.Web</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section class="info">
+      <h2 class="visually-hidden">Информация о компании и документы</h2>
+      <div class="info__group info__group--company">
+        <div class="info__company">
+          <img src="images/logo-color.svg" width="28" height="18" alt="Логотип Доктор Веб">
+          <p>© «Доктор Веб» 2003–2025</p>
+        </div>
+        <p>&laquo;Доктор Веб&raquo;&nbsp;&mdash; российский производитель антивирусных средств защиты информации
+          под&nbsp;маркой Dr.Web.</p>
+      </div>
+      <div class="info__group">
+        <a class="info__link" href="#" target="_blank" rel="noreferrer noopener">Обработка персональных данных</a>
+        <a class="info__link" href="#" target="_blank" rel="noreferrer noopener">Безопасная разработка и выпуск обновлений</a>
+      </div>
+      <div class="info__group">
+        <a class="info__link" href="#" target="_blank" rel="noreferrer noopener">Политика конфиденциальности</a>
+        <a class="info__link" href="#" target="_blank" rel="noreferrer noopener">Информация по требованиям Минцифры России</a>
+      </div>
+    </section>
   </footer>
   <script src="./scripts/index.js" type="module"></script>
 </body>

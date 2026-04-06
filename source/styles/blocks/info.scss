@@ -1,0 +1,62 @@
+@import "../common/mixins.scss";
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 18px;
+  border-top: 1px solid $color_border-tertiary;
+
+  @media (max-width: $vp-1279) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.info__group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &--company {
+    gap: 8px;
+
+    @media (max-width: $vp-1279) {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.info__company {
+  display: flex;
+  gap: 12px;
+}
+
+.info__link {
+  @include transition;
+
+  &:hover {
+    color: $color-reversed;
+  }
+}
+
+.catalogue__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  list-style: none;
+}
+
+.catalogue__item--big {
+  grid-column: 1/3;
+}

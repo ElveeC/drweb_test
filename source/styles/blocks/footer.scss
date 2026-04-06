@@ -1,0 +1,21 @@
+.footer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 56px;
+  width: 1168px;
+  gap: 48px;
+  color: $color-bg-disabled;
+
+  @media (max-width: $vp-1279) {
+    padding: 64px 32px;
+    width: 704px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 48px 16px;
+    gap: 32px;
+    width: auto;
+  }
+}
