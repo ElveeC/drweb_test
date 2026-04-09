@@ -112,6 +112,10 @@ const validateElement = (element) => {
 
 const resetForm = () => {
   form.reset();
+  const notification = form.querySelector(`.${NotificationClassName.EMAIL_NOTIFICATION}`);
+  if (notification) {
+    notification.remove();
+  }
 };
 
 const onFormSubmit = (evt) => {
