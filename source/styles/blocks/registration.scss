@@ -171,7 +171,7 @@
 }
 
 .registration__popup {
-  position: absolute;
+  position: fixed;
   inset: 0;
   display: flex;
   justify-content: center;
@@ -186,10 +186,10 @@
   gap: 32px;
 
   position: absolute;
-  top: calc(50% - 270px/2 - 15px);
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 85%;
+  width: 568px;
   padding: 64px 48px 48px;
   box-sizing: border-box;
 
@@ -201,11 +201,7 @@
 
 
   @media (max-width: $vp-767) {
-    top: calc(50% - 380px/3);
-  }
-
-  @media (max-width: $vp-479) {
-    top: calc(50% - 250px/3);
+    width: 80%;
   }
 }
 

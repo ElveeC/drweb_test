@@ -58,46 +58,51 @@
         <!-- Registration -->
         <section class="registration">
           <h2 class="registration__title">Заполните форму регистрации</h2>
-          <form class="registration__form" action="#" method="post" autocomplete="off">
-            <fieldset class="registration__fieldset">
-              <legend class="visually-hidden">Контактная информация</legend>
-              <div class="registration__input-wrapper">
-                <label class="registration__label" for="name">Фамилия, Имя</label>
-                <input class="registration__input" type="text" id="name" name="name" required>
-              </div>
-              <div class="registration__input-wrapper">
-                <label class="registration__label" for="company">Компания</label>
-                <input class="registration__input" type="text" id="company" name="company" required>
-              </div>
-              <div class="registration__input-wrapper">
-                <label class="registration__label" for="position">Должность</label>
-                <input class="registration__input" type="text" id="position" name="position" required>
-              </div>
-              <div class="registration__input-wrapper">
-                <label class="registration__label" for="email">E-mail</label>
-                <input class="registration__input" type="email" id="email" name="email" required>
-              </div>
-              <div class="registration__input-wrapper">
-                <label class="registration__label" for="tel">Телефон</label>
-                <input class="registration__input" type="tel" id="tel" name="tel" required pattern="\+?[0-9\s\-\(\)]+">
-              </div>
-            </fieldset>
+          <div class="registration__form-wrapper">
+            <form class="registration__form" action="#" method="post" autocomplete="off" novalidate>
+              <fieldset class="registration__fieldset">
+                <legend class="visually-hidden">Контактная информация</legend>
+                <div class="registration__input-wrapper">
+                  <label class="registration__label" for="name">Фамилия, Имя</label>
+                  <input class="registration__input registration__input--name" type="text" id="name" name="name">
+                </div>
+                <div class="registration__input-wrapper">
+                  <label class="registration__label" for="company">Компания</label>
+                  <input class="registration__input registration__input--company" type="text" id="company"
+                    name="company">
+                </div>
+                <div class="registration__input-wrapper">
+                  <label class="registration__label" for="position">Должность</label>
+                  <input class="registration__input registration__input--position" type="text" id="position"
+                    name="position">
+                </div>
+                <div class="registration__input-wrapper">
+                  <label class="registration__label" for="email">E-mail</label>
+                  <input class="registration__input registration__input--email" type="email" id="email" name="email">
+                </div>
+                <div class="registration__input-wrapper">
+                  <label class="registration__label" for="tel">Телефон</label>
+                  <input class="registration__input registration__input--phone" type="tel" id="phone" name="phone">
+                </div>
+              </fieldset>
 
-            <div>
-              <p class="registration__note">Все поля обязательны для заполнения!</p>
-              <label class="registration__agreement">
-                <input class="registration__checkbox visually-hidden" type="checkbox" id="user-agreement"
-                  name="user-agreement" checked required>
-                <span class="registration__checkbox-icon">
-                </span>
-                <span class="registration__agreement-text">Я даю согласие на обработку моих персональных данных в
-                  соответствии с&nbsp;<a class="registration__agreement-link" href="https://company.drweb.ru/policy/"
-                    target="_blank" rel="noreferrer noopener">Политикой конфиденциальности</a>
-                </span>
-              </label>
-            </div>
-            <button class="registration__button button" disabled type="submit">Зарегистрироваться</button>
-          </form>
+              <div>
+                <p class="registration__note">Все поля обязательны для заполнения!</p>
+                <label class="registration__agreement">
+                  <input class="registration__checkbox visually-hidden" type="checkbox" id="user-agreement"
+                    name="user-agreement" checked required>
+                  <span class="registration__checkbox-icon">
+                  </span>
+                  <span class="registration__agreement-text">Я даю согласие на обработку моих персональных данных в
+                    соответствии с&nbsp;<a class="registration__agreement-link" href="https://company.drweb.ru/policy/"
+                      target="_blank" rel="noreferrer noopener">Политикой конфиденциальности</a>
+                  </span>
+                </label>
+              </div>
+              <button class="registration__button button" type="submit" disabled>Зарегистрироваться</button>
+            </form>
+          </div>
+
         </section>
 
         <!-- Contact -->
