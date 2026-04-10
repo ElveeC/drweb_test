@@ -9,6 +9,7 @@
   flex-direction: column;
   width: 100%;
   min-width: 320px;
+  overflow-x: hidden;
 
   &--no-scroll {
     overflow: hidden;
